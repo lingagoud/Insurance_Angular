@@ -1,0 +1,55 @@
+<header>
+<div class="container" style="background-color:blue;">
+    <h4>Buy Insurance</h4>
+</div>
+</header>
+<form (ngSubmit)="saveVehicle(vehicledata)" #vehicleForm="ngForm">
+    <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="4Wheeler" [(ngModel)]="vehicledata.TypeOfVehicle" #gridRadios1="ngModel">
+          <label class="form-check-label" for="gridRadios1">
+            4 Wheeler Insurance
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="2Wheeler" [(ngModel)]="vehicledata.TypeOfVehicle" #gridRadios2="ngModel">
+          <label class="form-check-label" for="gridRadios2">
+            2 Wheeler Insurance
+          </label>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="manufacturer" name="manufacturer" placeholder="Enter ManuFacturer" [(ngModel)]="vehicledata.ManufacturerName" #manufacture="ngModel" required>
+            <div *ngIf="(manufacture.touched || vehicleForm.submitted) && manufacture.errors?.['required']" style="color:red">*Manufacturer is Required</div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="model" name="model" placeholder="Enter Model"  [(ngModel)]="vehicledata.Model" #model="ngModel" required>
+            <div *ngIf="(model.touched || vehicleForm.submitted) && model.errors?.['required']" style="color:red">*Model is Required</div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="Licence" name="Licence" placeholder="Enter Driving Licence" [(ngModel)]="vehicledata.License" #Licence="ngModel" required>
+            <div *ngIf="(Licence.touched || vehicleForm.submitted) && Licence.errors?.['required']" style="color:red">*License is Required</div>
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" id="date" name="date" placeholder="Enter Purchase Date" [(ngModel)]="vehicledata.PurchaseDate" #date="ngModel" required>
+            <div *ngIf="(date.touched || vehicleForm.submitted) && date.errors?.['required']" style="color:red">*Date is Required</div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="rnumber" name="rnumber" placeholder="Enter Registration Number" [(ngModel)]="vehicledata.RegistrationNumber" #rnumber="ngModel" required>
+            <div *ngIf="(rnumber.touched || vehicleForm.submitted) && rnumber.errors?.['required']" style="color:red">*rnumber is Required</div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="enumber" name="enumber" placeholder="Enter Engine Number" [(ngModel)]="vehicledata.EngineNumber" #enumber="ngModel" required>
+            <div *ngIf="(enumber.touched || vehicleForm.submitted) && enumber.errors?.['required']" style="color:red">*enumber is Required</div>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="cnumber" name="cnumber" placeholder="Confirm Chassis Number" [(ngModel)]="vehicledata.ChassisNumber" #cnumber="ngModel" required>
+            <div *ngIf="(cnumber.touched || vehicleForm.submitted) && cnumber.errors?.['required']" style="color:red">*cnumber is Required</div>
+          </div>
+          <div class="col-12" style="margin-left: 46%;">
+
+            <button type="submit" class="btn btn-primary" [disabled]="!vehicleForm">Submit</button>
+          </div>
+        </div>
+</form>

@@ -1,0 +1,33 @@
+<div class="admin">
+    <header>
+        <div class="container" style="background-color:blue;">
+    <h2 style="color:whitesmoke;">Pending Claims</h2>
+</div>
+</header>    
+<div class="jumbotron" style="background-color:darkgrey;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Claim No.</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Amount</th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr *ngFor="let obj of cpsObj">
+                    <td>{{obj.id}}</td>
+                    <td>{{obj.claim_date | date }}</td>
+                    <td>{{!obj.isapproved?"Pending":"Approved"}}</td>
+                    <td>{{obj.renew_amount}}</td>
+                    <td><button type="button" class="btn btn-success" (click)="edit(obj.id)">✓</button></td>
+                </tr>
+                
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+</div>

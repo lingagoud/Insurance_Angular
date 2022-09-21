@@ -1,0 +1,49 @@
+<form (ngSubmit)="login(mail,password)" #loginForm="ngForm">
+  <div class="container">
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        name="email"
+        [(ngModel)]="mail"
+        #email="ngModel" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required
+        placeholder="example@gmail.com"
+      />
+      <div *ngIf="(email.touched || loginForm.submitted) && email.errors?.['required']" style="color:red">*Email is Required</div>
+      <div *ngIf="(email.touched || loginForm.submitted) && email.errors?.['pattern']" style="color:red">*Enter a valid Email</div>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="pass"
+        name="pass"
+        [(ngModel)]="password"
+        #pass="ngModel"
+        minlength="8"
+        required
+        placeholder="*****"
+      />
+      <div *ngIf="(pass.touched || loginForm.submitted) && pass.errors?.['required']" style="color:red">*Password is Required</div>
+      <div *ngIf="(pass.touched || loginForm.submitted) && pass.errors?.['minlength']" style="color:red">*Invalid Password</div>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Log in</button>
+      </div>
+  
+  <div class="footer">
+    <div class="forgetp">
+      <button type="submit" class="btn btn-primary" (click)="forgetpass()">Forget Password</button>
+    </div>
+    <!--<div class="forgetp">
+      <button type="submit" class="btn btn-primary" (click)="resetpass()">Reset Password</button>
+    </div>-->
+    <div class="forgetp">
+      <button type="submit" class="btn btn-primary" (click)="register()">RRegister</button>
+    </div>
+  </div>
+  </div>
+</form>
