@@ -1,5 +1,15 @@
-header nav{
-    border: 5px solid black;
- border-radius: 30px;
- margin: 2%;
+.nav-size{
+    font-size: large;   
+}
+
+.nav-border a{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.nav-border:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.nav-shadow{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px  inset, rgba(17, 17, 26, 0.3) 0px 8px 32px ;
 }

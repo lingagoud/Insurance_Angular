@@ -3,31 +3,25 @@
     flex-direction: column;
     justify-content: center;
     justify-content: space-between;
-    height: 50%;
-    width: 40%;
-    border:3px solid black;
-    border-radius: 5%;
-    background-color: cadetblue;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 .container-0{
     display: flex;
 }
 .container .container-2{
     margin-top: 2rem;
-    margin-left: 15%;
-    margin-right: 60%;
-    width: 80%;
-    font-family: 'Edu QLD Beginner', cursive;;
-    font-size: larger;
-    font-weight: bolder;
-    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color:black;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 1rem;
 }
 
 .container .container-3{
     margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: 30%;
-    margin-right: 60%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -36,8 +30,19 @@
 .container .container-3 .next{
     padding: 2rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
+    font-size: large;
     font-weight: bold;
 }
 
-
+.card{
+    margin: 3%;
+}
+.data{
+    color:rgb(17, 178, 103);;
+    font-size: large;
+    font-weight: 500;
+    font-family: cursive;
+}
+.buy{
+    padding-left:58rem ;
+}

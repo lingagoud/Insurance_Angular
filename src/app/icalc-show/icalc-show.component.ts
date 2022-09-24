@@ -36,7 +36,7 @@ export class IcalcShowComponent implements OnInit {
      console.log(this.plandata)
   }
   BuyInsurance(){
-    this.router.navigate(['Ibuy']) 
+    this.router.navigate(['login']) 
   }
 
   back(){

@@ -26,14 +26,15 @@ header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .mb-3{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .container-2{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.col-12{
-   margin-bottom: 0.2rem;
+.makecenter{
+    display: flex;
+    justify-content: center;
 }

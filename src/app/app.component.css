@@ -34,4 +34,7 @@ img{
     margin-top: 2%;
     font-family: 'Edu QLD Beginner', cursive;
 }
-
+.makecenter{
+    display: flex;
+    justify-content: center;
+}

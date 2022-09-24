@@ -30,20 +30,17 @@ header{
 }
 
 .container-2{
-    background-color: #4169E1;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    height: 350px;
-    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+   
+ 
 }
-.container-3{
-    margin-top: 3rem;
-}
-.mb-3{
-margin-left: 15%;
-margin-right: 15%;
+
+
+.makecenter{
+    display: flex;
+    justify-content: center;
 }

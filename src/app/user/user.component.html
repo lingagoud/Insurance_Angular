@@ -1,38 +1,46 @@
-<div>
-     <button type="button" class="btn btn-primary" [routerLink]="['/Ibuy/vdetails',email]">Buy Insurance</button>
+<div class="makecenter">
+      <h2 >Your Policies</h2>
 </div>
+<div class="makecenter" ><button type="button" class="btn btn-primary" [routerLink]="['/Ibuy/vdetails',email]">Buy New Policy</button></div>
+<div class="row justify-content-center">
+    <div class="card " style="width: 25rem;" *ngFor="let dept of customer_vehicle_policy">
+      <div class="card-body">
+        <h3 class="card-title text-center" style="padding-bottom: 20px;">Policy Details</h3>
 <div class="container-0">
-    <div class="container" *ngFor="let dept of customer_vehicle_policy">
+    <div class="container" >
         <!--  PolicyNo:number,
     Model:string,
     RegistrationNumber:string,
     RenewAmount:number,
     Email:string -->
         <div  class="container-2" >
-            <p>
-                Policy Number:# {{dept.policyNo}}
-            </p>
-            <p>
-                Vehicle Model:# {{dept.model}}
-            </p>
-            <p>
-                Registration Number:# {{dept.registrationNumber}}
-            </p>
-            <p>
-                Claim Amount: INR {{dept.renewAmount}}
-            </p>
+            <div>
+                Policy Number: <span class="data">{{dept.policyNo}}</span>
+            </div>
+            <div>
+                Vehicle Model: <span class="data">{{dept.model}}</span>
+            </div>
+            <div>
+                Registration Number: <span class="data">{{dept.registrationNumber}}</span>
+            </div>
+            <div>
+                Claim Amount: <span class="data">INR {{dept.renewAmount}}</span>
+            </div>
         </div>
     <div class="container-3">
             
             <div *ngIf="dept.renewAmount>0" class="next">
-                <button class="claimb" type="submit" (click)="claim()">Claim</button>
+                <button class="claimb"  class="btn btn-warning"type="submit" (click)="claim()">Claim</button>
             </div>
             <div *ngIf="!(dept.renewAmount>0)" class="next">
                 <div class="claimB">Claim Is Approved</div>
             </div>
             <div class="next">
-                <button class="renewb" type="submit" (click)="renew()">Renew</button>
+                <button class="renewb" class="btn btn-danger" type="submit" (click)="renew()">Renew</button>
             </div>
         </div>
+</div>
+</div>
+</div>
 </div>
 </div>

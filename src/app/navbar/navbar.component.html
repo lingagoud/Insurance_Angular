@@ -1,5 +1,5 @@
-<header>
-    <nav class="navbar navbar-expand-lg bg-light">
+
+    <!--<nav class="navbar navbar-expand-lg bg-inverse">
         <div class="container-fluid">
           <a class="navbar-brand" href="" routerLink="">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,37 @@
                 <a class="nav-link" href="" routerLink="/faq-page">FAQ</a>
               </li>
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
           </div>
         </div>
-      </nav>
-</header>
+      </nav>-->
+
+      
+      <div class="nav-shadow">
+      <nav class="navbar navbar-expand-lg navbar-light bg-inverse">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav nav-size" >
+                    <a href="#"  class="nav-item nav-link active">Home</a>
+                    <a href="#" routerLink="login" class="nav-item nav-link">Login</a>
+                    <a href="#" routerLink="Ibuy" class="nav-item nav-link">SignUp</a>
+                    <a href="#" class="nav-item nav-link">Contact Us</a>
+
+                    <!--<a href="#" class="nav-item nav-link disabled" tabindex="-1">Reports</a>-->
+                </div>
+               <!-- <div class="navbar-nav  ms-auto nav-size ">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
+                <div class="navbar-nav  nav-size nav-border">
+                  <a href="#" class="nav-item nav-link">SignUp</a>
+              </div>-->
+            </div>
+        </div>
+    </nav>
+      </div>

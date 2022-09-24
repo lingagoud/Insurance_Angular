@@ -26,25 +26,15 @@ header{
     border-radius: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-.mb-3{
-    margin-left: 15%;
-    margin-right: 15%;
-}
 .container-2{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
-    margin-top: 0.5rem;
-    justify-content: space-evenly;
-    margin-bottom: 0.5rem;
-    background-color: #4169E1;
-    margin-left: 15%;
-    margin-right: 15%;
-    border: 5px;
-    border-radius: 10px;
-    height: 380px;
-    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+
 }
+
 p{
     font-size: larger;
     font-weight: bold;
@@ -53,23 +43,23 @@ p{
 }
 
 .col-sm-10{
-    margin-left:30%;
     display:flex;
     flex-direction: column;
     justify-content:space-around;
 }
-.form-check{
+/*.form-check{
     margin-top: 0.2rem;
     display: flex;
     justify-content: center;
     margin-left: 10%;
-    background-color: blue;
+    background-color: ;
     color: beige;
     height: 2rem;
     width: 15rem;
     border: 5px;
     border-radius: 10px;
-}
-.col-12{
-    margin-bottom: 0.2rem;
+}*/
+.makecenter{
+    display: flex;
+    justify-content: center;
 }
